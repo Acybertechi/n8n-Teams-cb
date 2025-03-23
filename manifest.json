@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "version": "1.0.0",
+  "id": "00000000-0000-0000-0000-000000000001",
+  "packageName": "com.tonentreprise.chatbot",
+  "name": {
+    "short": "Chatbot n8n",
+    "full": "Assistant n8n pour Teams"
+  },
+  "description": {
+    "short": "Assistant IA connecté à n8n",
+    "full": "Ce chatbot vous permet d'interagir avec un assistant connecté à n8n."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "staticTabs": [
+    {
+      "entityId": "chatbotTab",
+      "name": "Assistant n8n",
+      "contentUrl": "https://n8n-teams-cb.vercel.app/chat.html",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["n8n-teams-cb.vercel.app"]
+"]
+}
